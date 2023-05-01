@@ -6,6 +6,7 @@ export class ArgumentsWrapper {
       return;
     }
     this.username = process.env.TARGET_USERNAME;
+    console.log(process.pwd());
     this.pathToSalesforceProject =
       process.env.SOURCE_PATH !== undefined
         ? `${process.cwd()}/${process.env.SOURCE_PATH}`
