@@ -7,7 +7,7 @@ export class SfdxCommand {
   }
   run() {
     try {
-      const results = spawnSync("npx", this.commandArgs, {
+      const results = spawnSync("", this.commandArgs, {
         stdio: "inherit",
       });
       this.succeeded = results.status === 0 ? true : false;
